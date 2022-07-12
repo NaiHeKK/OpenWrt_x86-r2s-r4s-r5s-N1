@@ -123,7 +123,7 @@ jobs:
       working-directory: /workdir
       run: |
         REPO_BRANCH="master"
-        git clone $REPO_URL -b master
+        git clone $REPO_URL -b master openwrt
         if [ "${{ env.REPO_BRANCH }}" ]; then
           cd openwrt
           git checkout ${{ env.REPO_BRANCH }}
